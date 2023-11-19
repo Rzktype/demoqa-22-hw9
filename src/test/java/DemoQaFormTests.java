@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.UserInfoPage;
 import pages.components.ChecksOutputInfoComponent;
 import utils.RandomUtils;
 
@@ -9,7 +8,6 @@ import static io.qameta.allure.Allure.step;
 
 
 public class DemoQaFormTests extends tests.TestBase {
-    UserInfoPage userInfoPage = new UserInfoPage();
     ChecksOutputInfoComponent tableUserInfo = new ChecksOutputInfoComponent();
     RandomUtils random = new RandomUtils();
 
