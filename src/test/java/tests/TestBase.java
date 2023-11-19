@@ -37,13 +37,13 @@ public class TestBase {
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();
-    }
 
-    void addAttachments() {
+
+    void addAttachment() {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
 
-}
+}}
