@@ -10,7 +10,7 @@ public class TextBoxTests extends tests.TestBase {
 
     @Test
     @Tag("JenkinsTextBox")
-    @DisplayName("Successfull Registration")
+    @DisplayName("Successful Registration")
     void fillFormTest() {
         ChecksOutputInfoComponent checkOutput = new ChecksOutputInfoComponent();
 // test

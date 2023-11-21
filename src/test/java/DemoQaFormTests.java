@@ -13,7 +13,7 @@ public class DemoQaFormTests extends tests.TestBase {
 
     @Test
     @Tag("JenkinsDemoQA")
-    @DisplayName("Successfull Registration")
+    @DisplayName("Successful Registration")
     void fillFormTest() {
 
         step("Open registration form", () -> {
