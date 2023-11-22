@@ -49,7 +49,7 @@ tasks.withType(Test) {
     }
 }
 
-task demoQA_test(type: Test) {
+    task demoQA_test(type: Test) {
     useJUnitPlatform {
         includeTags("JenkinsDemoQA")
     }
