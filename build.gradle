@@ -39,6 +39,7 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
 
     testLogging {
         lifecycle {
@@ -49,12 +50,10 @@ tasks.withType(Test) {
 }
 
 task demoQA_test(type: Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("JenkinsDemoQA")
     }
     task textBox_test(type: Test) {
-        systemProperties(System.getProperties())
         useJUnitPlatform {
             includeTags("JenkinsTextBox")
         }
