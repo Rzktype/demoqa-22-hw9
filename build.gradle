@@ -47,18 +47,6 @@ tasks.withType(Test) {
         }
     }
 }
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-tasks.withType(Test) {
-    systemProperties(System.getProperties())
-}
-
-test {
-    useJUnitPlatform()
-    systemProperties(System.getProperties())
-}
 
 task demoQA_test(type: Test) {
     systemProperties(System.getProperties())
